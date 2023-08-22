@@ -33,10 +33,34 @@ console.log(firstColor);
 console.table(colors);
 
 //loops
-//for of loop
+//for of loop 99% of your code
 let colorList = document.querySelector('#color-list');
 for( let item of colors ){
     //repeated for each item in the array of colors
     console.log( 'color: ', item );
     colorList.innerHTML += '<div>' + item + '</div>';
 }
+
+// traditional for loop
+let temperatureValues = ['72', '84', '93', '102', '76'];
+//start, end, increment
+
+//loop temp values
+for( let i = 0; i < temperatureValues.length; i += 1 ){
+    let temp = temperatureValues[i];
+    console.log( 'the temperature is ', temp );
+}
+
+for( let temp of temperatureValues){
+    console.log( temp );
+}
+
+//wjhile loop (least common)
+let start = 0;
+//end
+while (start < 10 ){
+    console.log( start );
+    start +=1;
+}
+
+
